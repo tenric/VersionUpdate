@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  Check and update app's version for both AppStore & Fir.
+  When new version of app is upload to AppStore or Fir, check and update this new version.
                    DESC
 
   s.homepage     = "https://github.com/tenric/VersionUpdate"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "VersionUpdate/VersionUpdate/*"
+  s.source_files  = "VersionUpdate/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
