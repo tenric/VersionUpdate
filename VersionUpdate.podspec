@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  Check and update app's version for both AppStore & Fir.
                    DESC
 
   s.homepage     = "https://github.com/tenric/VersionUpdate"
