@@ -21,12 +21,12 @@ struct AppChannel {
     var alertMessage: String = "若您选择忽略此版本，仍可以随时升级至最新。"
 }
 
-class VersionUpdate: NSObject, NSURLSessionDelegate{
+public class VersionUpdate: NSObject, NSURLSessionDelegate{
     
     var session: NSURLSession!
     var channels = Dictionary<String,AppChannel>()
     
-    func addAppStoreChannelWithAppId(appId:String) {
+    public func addAppStoreChannelWithAppId(appId:String) {
         var appStoreChannel = AppChannel()
         appStoreChannel.name = "AppStore"
         appStoreChannel.infoUrl = "https://itunes.apple.com/cn/lookup?id=\(appId)"
@@ -39,7 +39,7 @@ class VersionUpdate: NSObject, NSURLSessionDelegate{
         channels[appStoreChannel.name] = appStoreChannel
     }
     
-    func addFirChannelWithAppId(appId:String, token:String, downloadUrl:String) {
+    public func addFirChannelWithAppId(appId:String, token:String, downloadUrl:String) {
         var firChannel = AppChannel()
         firChannel.name = "Fir"
         firChannel.infoUrl = "http://api.fir.im/apps/latest/\(appId)?api_token=\(token)"
@@ -52,7 +52,7 @@ class VersionUpdate: NSObject, NSURLSessionDelegate{
         channels[firChannel.name] = firChannel
     }
     
-    func checkUpdate() {
+    public func checkUpdate() {
         
         let channelName = VersionUpdate.channelName()
         if (channelName == nil || channels[channelName!] == nil) {
