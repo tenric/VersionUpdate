@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  VersionUpdate
+//  VersionUpdateDemo
 //
 //  Created by 敏杰 倪 on 16/7/7.
 //  Copyright © 2016年 Tenric. All rights reserved.

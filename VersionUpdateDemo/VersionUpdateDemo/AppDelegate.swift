@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  VersionUpdate
+//  VersionUpdateDemo
 //
 //  Created by 敏杰 倪 on 16/7/7.
 //  Copyright © 2016年 Tenric. All rights reserved.
@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let versionUpdate = VersionUpdate()
+        versionUpdate.addAppStoreChannelWithAppId("1114716391")
+        versionUpdate.addFirChannelWithAppId("5721b76e748aac3e6b000017", token: "5e1272271c5f28a11c60ebd761203a9c", downloadUrl: "http://fir.im/yanzheng")
+        versionUpdate.checkUpdate()
+        
         return true
     }
 
