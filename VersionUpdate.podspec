@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VersionUpdate"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Check and update app's version for both AppStore & Fir."
   s.homepage     = "https://github.com/tenric/VersionUpdate"
   s.license      = { :type => "MIT", :file => "LICENSE" }
